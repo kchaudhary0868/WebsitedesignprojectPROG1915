@@ -1,0 +1,780 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("images/wooden\ texture.jpg");
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E5DEDE;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-top: 1px solid #8B4513;
+    border-bottom: 1px solid #8B4513;
+    margin-top: 5em;
+}
+
+footer h2 {
+    text-decoration: underline;
+}
+
+footer li {
+    list-style: none;
+}
+
+.outer-li {
+    display: inline-block;
+    margin-right: 2em;
+}
+
+.inner-ul {
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E5DEDE;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-top: 1px solid #8B4513;
+    border-bottom: 1px solid #8B4513;
+}
+
+#nav-button {
+    display: none;
+    top: 2em;
+    right: 1em;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+}
+
+.bar {
+    height: 5px;
+    width: 100%;
+    background-color: #8B4513;
+    border-radius: 1.5em;
+}
+
+#copyright {
+    width: 98%;
+    text-align: center;
+    border-radius: 0.7em;
+    border: 1px solid #8B4513;
+    background-color: #E5DEDE;
+    margin: auto;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    color: #3A3B3C;
+}
+
+.logo {
+    margin-left: 1em;
+    padding: 0;
+    width: 6.5em;
+    height: auto;
+}
+
+.nav-options ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-options li {
+    list-style: none;
+}
+
+.nav-options li a {
+    text-decoration: none;
+    padding: 1em;
+    display: block;
+    font-weight: bolder;
+}
+
+.nav-options li:hover {
+    background-color: #8B4513;
+}
+
+.nav-options a:hover {
+    color: white;
+}
+
+#container1 {
+    width: 100%;
+    margin-bottom: 9em;
+    margin-top: 0;
+}
+
+.bigbox {
+    width: 48%;
+    height: 480px;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+#fit {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+    margin: auto;
+    background-color: #8B4513;
+    margin-top: 0;
+    box-shadow: rgba(0, 0, 0, 60%) 1.5em 1.5em;
+}
+
+.container2 {
+    width: 100%;
+    margin: 1em;
+    margin-top: 5em;
+}
+
+.smallbox {
+    width: 25%;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 60%);
+    box-sizing: border-box;
+    border-radius: 3em;
+    font-family: "Tempus Sans ITC";
+    color: white;
+    text-align: center;
+    padding: 1.2em;
+    font-size: 1.3em;
+    font-weight: bolder;
+}
+
+.fitsmall {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+    margin: auto;
+    padding: 1em;
+}
+
+#hero {
+    background-image: url("images/coffee.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#main-text {
+    background-color: #E5DEDE;
+    padding: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#text-size {
+    width: 85%;
+}
+
+#deal1 {
+    background-image: url("images/coffee\ 1.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    box-shadow: rgba(0, 0, 0, 60%) 1.5em 1.5em;
+}
+
+#deal2 {
+    background-image: url("images/croissant.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    box-shadow: rgba(0, 0, 0, 60%) 1.5em 1.5em;
+}
+
+#small-view {
+    display: none;
+}
+
+h1 {
+    color: #8B4513;
+}
+
+a {
+    color: #8B4513;
+}
+
+p {
+    line-height: 2em;
+    font-size: 1.5em;
+}
+
+.inline-icons {
+    display: inline-block;
+    width: 15px;
+    height: auto;
+}
+
+#container1-menu {
+    background-image: url("images/menu.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 90%;
+    height: 480px;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 60%) 1.5em 1.5em;
+}
+
+#menu {
+    width: 80%;
+    height: 240px;
+    margin: auto;
+    margin-top: 4em;
+    margin-bottom: 11em;
+}
+
+.menu-option,
+.submenu-option {
+    background-color: rgba(0, 0, 0, 60%);
+    box-sizing: border-box;
+    border-radius: 3em;
+    font-family: "Tempus Sans ITC";
+    color: white;
+    width: 30%;
+    text-align: center;
+    padding: 1.2em;
+    font-size: 2em;
+    margin: auto;
+    font-weight: bolder;
+}
+
+.submenu-option a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+.menu {
+    margin: auto;
+    width: 100%;
+    height: 100px;
+    display: flex;
+}
+
+.menu:nth-of-type(2) {
+    margin-top: 5em;
+}
+
+#focus {
+    background-color: black;
+}
+
+#drink1 {
+    background-image: url("images/coffee\ 1.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#drink2 {
+    background-image: url("images/espresso.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#drink3 {
+    background-image: url("images/cappuccino.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#drink4 {
+    background-image: url("images/latte.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#drink5 {
+    background-image: url("images/juice.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#drink6 {
+    background-image: url("images/pop.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#breakfast1 {
+    background-image: url("images/sausage\ and\ egger.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#breakfast2 {
+    background-image: url("images/bacon\ and\ egger.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#breakfast3 {
+    background-image: url("images/omelet.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#breakfast4 {
+    background-image: url("images/2\ eggs.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#breakfast5 {
+    background-image: url("images/eggs\ benedict.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#lunch1 {
+    background-image: url("images/blt\ sandwich.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#lunch2 {
+    background-image: url("images/turkey\ bacon\ clubhouse.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#lunch3 {
+    background-image: url("images/Chicken\ Pesto\ Grilled\ Panini.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#lunch4 {
+    background-image: url("images/steak\ sandwich.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#lunch5 {
+    background-image: url("images/vegi\ bowl.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#hero-about {
+    background-image: url("images/ConCoffee\ Logo\ Trimmed.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: #E5DEDE;
+}
+
+.container-member {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 1em;
+}
+
+.container-member:nth-of-type(6) {
+    margin-bottom: 9em;
+}
+
+#members {
+    background-color: rgba(0, 0, 0, 60%);
+    box-sizing: border-box;
+    border-radius: 3em;
+    font-family: "Tempus Sans ITC";
+    color: white;
+    width: 30%;
+    text-align: center;
+    padding: 1.2em;
+    font-size: 2em;
+    margin: auto;
+    font-weight: bolder;
+    margin-bottom: 5em;
+}
+
+#arshia {
+    background-image: url("images/arshia.jpeg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#pooja {
+    background-image: url("images/pooja.jpeg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#kamal {
+    background-image: url("images/kamal.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#bonny {
+    background-image: url("images/bonny.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.fit_ {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: row;
+    margin: auto;
+    background-color: #8B4513;
+    margin-top: 0;
+    align-items: center;
+}
+
+.container-member:nth-child(odd) .fit_ {
+    flex-flow: row-reverse;
+}
+
+.container3 {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 1em;
+}
+
+.container3 .smallbox {
+    width: 10%;
+    height: 100px;
+}
+
+.container3 .smallbox p {
+    margin: 0;
+}
+
+.container3 .smallbox:nth-child(even) {
+    width: 60%;
+}
+
+#address {
+    background-image: url("images/address.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#email {
+    background-image: url("images/email.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#number {
+    background-image: url("images/phone.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#facebook {
+    background-image: url("images/facebook_icon.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#instagram {
+    background-image: url("images/Instagram_icon.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#twitter {
+    background-image: url("images/twitter-icon.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.container2 .smallbox:nth-child(odd) {
+    box-shadow: rgba(0, 0, 0, 60%) 1.5em 1.5em;
+}
+
+#container1-menu-breakfast {
+    background-image: url("images/menu_breakfast.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 90%;
+    height: 480px;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 60%) 1.5em 1.5em;
+}
+
+#container1-menu-lunch {
+    background-image: url("images/menu_lunch.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 90%;
+    height: 480px;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 60%) 1.5em 1.5em;
+}
+
+@media screen and (max-width: 1500px) {
+    .bigbox {
+        width: 60%;
+    }
+
+    .smallbox {
+        width: 60%;
+        font-size: 2.3em;
+    }
+
+    .container3 .smallbox {
+        height: 100px;
+    }
+
+
+    #fit {
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+    .fit_ {
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+    .container-member:nth-child(odd) .fit_ {
+        flex-flow: column;
+    }
+
+    #main-text {
+        font-size: 1.3em;
+        line-height: 2.5em;
+    }
+
+    p {
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+
+    #small-deal2 {
+        background-image: url("images/croissant.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+    #deal2 {
+        background-image: none;
+    }
+
+    #big-view {
+        display: none;
+    }
+
+    #small-view {
+        display: block;
+    }
+
+    .smallbox:nth-of-type(1) {
+        margin-bottom: 1em;
+    }
+
+    .container3 .smallbox p {
+        font-size: 0.7em;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .bigbox {
+        width: 80%;
+    }
+
+    .smallbox {
+        width: 80%;
+        font-size: 2em;
+        border-radius: 3em;
+        padding: 0.8em;
+    }
+
+    #fit,
+    .fit_ {
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+    #main-text {
+        font-size: 1.28em;
+        line-height: 2em;
+    }
+
+    p {
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+
+    #small-deal2 {
+        background-image: url("images/croissant.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+    #deal2 {
+        background-image: none;
+    }
+
+    #big-view {
+        display: none;
+    }
+
+    #small-view {
+        display: block;
+    }
+
+    .smallbox:nth-of-type(1) {
+        margin-bottom: 1em;
+    }
+
+    .menu-option,
+    .submenu-option,
+    #members {
+        font-size: 1.6em;
+        width: 32%;
+    }
+
+    .container3 .smallbox {
+        height: 90px;
+    }
+
+    .container3 .smallbox p {
+        font-size: 0.6em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .bigbox {
+        width: 80%;
+    }
+
+    #nav-button {
+        display: flex;
+    }
+
+    .smallbox {
+        width: 80%;
+        font-size: 2em;
+        border-radius: 3em;
+        padding: 0.8em;
+    }
+
+
+    #fit,
+    .fit_ {
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+    h1 {
+        line-height: 1.5em;
+    }
+
+    #main-text {
+        font-size: 1.1em;
+        line-height: 1.5em;
+    }
+
+    #small-deal2 {
+        background-image: url("images/croissant.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        color: none;
+    }
+
+    #deal2 {
+        background-image: none;
+        color: white;
+    }
+
+    #big-view {
+        display: none;
+    }
+
+    #small-view {
+        display: block;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .nav-options ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-options li {
+        text-align: center;
+        border-top: 1px solid #8B4513;
+    }
+
+    .nav-options li a {
+        padding: 0.5em;
+        font-size: 1.5em;
+    }
+
+    .nav-options {
+        display: none;
+        width: 100%;
+    }
+
+    .nav-options.active {
+        display: flex;
+    }
+
+    .outer-li {
+        display: block;
+        margin: 0;
+        text-align: center;
+        font-size: 1.6em;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    footer ul {
+        padding: 0;
+    }
+
+    footer {
+        padding-left: 8em;
+        padding-right: 8em;
+    }
+
+    .inline-icons {
+        display: inline-block;
+        width: 20px;
+        height: auto;
+    }
+
+    .smallbox:nth-of-type(1) {
+        margin-bottom: 1em;
+    }
+
+    .menu-option,
+    .submenu-option,
+    #members {
+        font-size: 1.2em;
+        width: 32%;
+    }
+
+    .container3 .smallbox {
+        height: 85px;
+    }
+
+    .container3 .smallbox p {
+        font-size: 0.5em;
+    }
+
+    .container3 .smallbox:nth-child(even) {
+        width: 80%;
+    }
+}
