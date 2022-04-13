@@ -1,11 +1,10 @@
-* {
-    box-sizing: border-box;
-}
-
 body {
     background-image: url("images/wooden\ texture.jpg");
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
 }
 
 footer {
@@ -14,8 +13,8 @@ footer {
     align-items: center;
     background-color: #E5DEDE;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border-top: 1px solid #8B4513;
-    border-bottom: 1px solid #8B4513;
+    border-top: 1px solid #6E3811;
+    border-bottom: 1px solid #6E3811;
     margin-top: 5em;
 }
 
@@ -42,8 +41,8 @@ nav {
     align-items: center;
     background-color: #E5DEDE;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border-top: 1px solid #8B4513;
-    border-bottom: 1px solid #8B4513;
+    border-top: 1px solid #6E3811;
+    border-bottom: 1px solid #6E3811;
 }
 
 #nav-button {
@@ -60,7 +59,7 @@ nav {
 .bar {
     height: 5px;
     width: 100%;
-    background-color: #8B4513;
+    background-color: #6E3811;
     border-radius: 1.5em;
 }
 
@@ -68,7 +67,7 @@ nav {
     width: 98%;
     text-align: center;
     border-radius: 0.7em;
-    border: 1px solid #8B4513;
+    border: 1px solid #6E3811;
     background-color: #E5DEDE;
     margin: auto;
     margin-top: 0.5em;
@@ -101,7 +100,7 @@ nav {
 }
 
 .nav-options li:hover {
-    background-color: #8B4513;
+    background-color: #6E3811;
 }
 
 .nav-options a:hover {
@@ -114,7 +113,8 @@ nav {
     margin-top: 0;
 }
 
-.bigbox {
+.bigbox,
+.main-text {
     width: 48%;
     height: 480px;
     box-sizing: border-box;
@@ -129,7 +129,7 @@ nav {
     justify-content: space-around;
     flex-flow: wrap;
     margin: auto;
-    background-color: #8B4513;
+    background-color: #6E3811;
     margin-top: 0;
     box-shadow: rgba(0, 0, 0, 60%) 1.5em 1.5em;
 }
@@ -171,7 +171,8 @@ nav {
     background-repeat: no-repeat;
 }
 
-#main-text {
+#main-text,
+.main-text {
     background-color: #E5DEDE;
     padding: 1.5em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -200,11 +201,11 @@ nav {
 }
 
 h1 {
-    color: #8B4513;
+    color: #6E3811;
 }
 
 a {
-    color: #8B4513;
+    color: #6E3811;
 }
 
 p {
@@ -432,7 +433,7 @@ p {
     justify-content: space-around;
     flex-flow: row;
     margin: auto;
-    background-color: #8B4513;
+    background-color: #6E3811;
     margin-top: 0;
     align-items: center;
 }
@@ -520,23 +521,14 @@ p {
     box-shadow: rgba(0, 0, 0, 60%) 1.5em 1.5em;
 }
 
-@media screen and (max-width: 1500px) {
-    .bigbox {
-        width: 60%;
-    }
+#small-deal2 {
+    box-shadow: none;
+}
 
-    .smallbox {
-        width: 60%;
-        font-size: 2.3em;
-    }
+@media screen and (max-width: 1500px) {
 
     .container3 .smallbox {
         height: 100px;
-    }
-
-
-    #fit {
-        background-color: rgba(255, 255, 255, 0);
     }
 
     .fit_ {
@@ -558,24 +550,6 @@ p {
         line-height: 1.5em;
     }
 
-    #small-deal2 {
-        background-image: url("images/croissant.jpg");
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-    }
-
-    #deal2 {
-        background-image: none;
-    }
-
-    #big-view {
-        display: none;
-    }
-
-    #small-view {
-        display: block;
-    }
-
     .smallbox:nth-of-type(1) {
         margin-bottom: 1em;
     }
@@ -585,9 +559,36 @@ p {
     }
 }
 
-@media screen and (max-width: 1000px) {
-    .bigbox {
+@media screen and (max-width: 1050px) {
+
+    #container1-menu-lunch,
+    #container1-menu-breakfast,
+    #container1-menu,
+    #hero-about,
+    #deal1,
+    #deal2,
+    #fit,
+    .container2 .smallbox:nth-child(odd) {
+        box-shadow: rgba(0, 0, 0, 60%) .5em .5em;
+    }
+
+    #main-text,
+    #hero {
+        box-shadow: rgba(0, 0, 0, 60%) .5em .5em;
+    }
+
+    .bigbox,
+    .main-text {
         width: 80%;
+    }
+
+    #small-deal2 {
+        box-shadow: rgba(0, 0, 0, 60%) .5em .5em;
+    }
+
+    #deal2,
+    #fit {
+        box-shadow: none;
     }
 
     .smallbox {
@@ -602,7 +603,8 @@ p {
         background-color: rgba(255, 255, 255, 0);
     }
 
-    #main-text {
+    #main-text,
+    .main-text {
         font-size: 1.28em;
         line-height: 2em;
     }
@@ -651,7 +653,9 @@ p {
 }
 
 @media screen and (max-width: 600px) {
-    .bigbox {
+
+    .bigbox,
+    .main-text {
         width: 80%;
     }
 
@@ -676,7 +680,8 @@ p {
         line-height: 1.5em;
     }
 
-    #main-text {
+    #main-text,
+    .main-text {
         font-size: 1.1em;
         line-height: 1.5em;
     }
@@ -712,7 +717,7 @@ p {
 
     .nav-options li {
         text-align: center;
-        border-top: 1px solid #8B4513;
+        border-top: 1px solid #6E3811;
     }
 
     .nav-options li a {
